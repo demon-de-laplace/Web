@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.multipart.saveDir" value="D:\\temp"></constant>
+	<package name="lgq.action" extends="struts-default">
+		<action name="uploadA" class="lgq.action.UploadAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="searchPaperA" class="lgq.action.SearchPaperAction">
+			<result name="success">/showResult.jsp</result>
+		</action>
+		<action name="readPaperA" class="lgq.action.ReadPaperAction">
+			<result name="success">/readPaper.jsp</result>
+		</action>
+		<action name="downloadA" class="lgq.action.DownloadAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="deletePaperA" class="lgq.action.DeletePaperAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="updateHelpA" class="lgq.action.UpdateHelpAction">
+			<result name="success">/updatePaper.jsp</result>
+		</action>
+		<action name="updatePaperA" class="lgq.action.UpdatePaperAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+	</package>
+</struts>    
