@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.multipart.saveDir" value="D:\\temp"></constant>
+	<package name="lgq.action" extends="jfreechart-default">
+		<action name="uploadA" class="lgq.action.UploadAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="searchPaperA" class="lgq.action.SearchPaperAction">
+			<result name="success">/showResult.jsp</result>
+			<result name="error">/OK.jsp</result>
+		</action>
+		<action name="readPaperA" class="lgq.action.ReadPaperAction">
+			<result name="success">/readPaper.jsp</result>
+		</action>
+		<action name="downloadA" class="lgq.action.DownloadAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="deletePaperA" class="lgq.action.DeletePaperAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="updateHelpA" class="lgq.action.UpdateHelpAction">
+			<result name="success">/updatePaper.jsp</result>
+		</action>
+		<action name="updatePaperA" class="lgq.action.UpdatePaperAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="toExcelA" class="lgq.action.ToExcelAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="goodLuckA" class="lgq.action.GoodLuckAction">
+			<result name="success">/readPaper.jsp</result>
+		</action>
+		<action name="showDetailA" class="lgq.action.ShowDetailAction">
+			<result name="success">/showDetail.jsp</result>
+		</action>
+		<action name="paperTypeA" class="lgq.action.PaperTypeAction">
+			<result name="success" type="chart">
+               <param name="height">300</param>
+               <param name="width">450</param>
+           </result>
+		</action>
+		<action name="downloadTimesA" class="lgq.action.DownloadTimesAction">
+			<result name="success" type="chart">
+               <param name="height">300</param>
+               <param name="width">450</param>
+           </result>
+		</action>
+		<action name="researchScoreA" class="lgq.action.ResearchScoreAction">
+			<result name="success" type="chart">
+               <param name="height">300</param>
+               <param name="width">450</param>
+           </result>
+         </action>
+           <action name="uploadRateA" class="lgq.action.UploadRateAction">
+			<result name="success" type="chart">
+               <param name="height">300</param>
+               <param name="width">450</param>
+           </result>
+		</action>
+	</package>
+</struts>    
