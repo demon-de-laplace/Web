@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.multipart.saveDir" value="D:\\temp"></constant>
+	<package name="lgq.action" extends="struts-default">
+		<action name="uploadA" class="lgq.action.UploadAction">
+			<result name="success">/OK.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="searchPaperA" class="lgq.action.SearchPaperAction">
+			<result name="success">/showResult.jsp</result>
+			<result name="error">/OK.jsp</result>
+		</action>
+		<action name="readPaperA" class="lgq.action.ReadPaperAction">
+			<result name="success">/readPaper.jsp</result>
+		</action>
+		<action name="downloadA" class="lgq.action.DownloadAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="deletePaperA" class="lgq.action.DeletePaperAction">
+			<result name="success">/OK.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="updateHelpA" class="lgq.action.UpdateHelpAction">
+			<result name="success">/updatePaper.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="updatePaperA" class="lgq.action.UpdatePaperAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="toExcelA" class="lgq.action.ToExcelAction">
+			<result name="success">/OK.jsp</result>
+		</action>
+		<action name="goodLuckA" class="lgq.action.GoodLuckAction">
+			<result name="success">/readPaper.jsp</result>
+		</action>
+		<action name="showDetailA" class="lgq.action.ShowDetailAction">
+			<result name="success">/showDetail.jsp</result>
+		</action>
+		<action name="userAction" class="lgq.action.UserAction">
+			<result name="success">/login.jsp</result>
+			<result name="Error">/Error.jsp</result>
+			<result name="Okay">/OK.jsp</result>
+			<result name="withdraw">/OK.jsp</result>
+		</action>
+		<action name="searchLogA" class="lgq.action.SearchLog">
+			<result name="error">/OK.jsp</result>
+			<result name="upload">/showUploadLog.jsp</result>
+			<result name="update">/showUpdateLog.jsp</result>
+			<result name="delete">/showDeleteLog.jsp</result>
+		</action>
+		<action name="statisticsA" class="lgq.action.StatisticsAction">
+			<result name="success">/statistics.jsp</result>
+		</action>
+	</package>
+</struts>    

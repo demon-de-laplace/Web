@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="lgq.model">
+	<class name="lgq.model.Paper" table="dbo.paper">
+		<id name="articleId" column="articleId" type="integer">
+			<generator class="increment"></generator>
+		</id>
+		<property name="title" type="string" not-null="true" length="50"/>
+		<property name="author" type="string" not-null="true" length="50"/>
+		<property name="type1" type="string" not-null="true" length="50"/>
+		<property name="type2" type="string" not-null="true" length="50"/>
+		<property name="userId" type="string" not-null="true" length="50"></property>
+		<property name="keyWord" type="string" not-null="true" length="50"/>
+		<property name="content" type="image" not-null="true"/>
+		<property name="flag" type="integer" not-null="true"/>
+		<property name="downloadTimes" type="integer" not-null="true"/>
+		<property name="year" type="integer" not-null="true"/>
+		<property name="month" type="integer"/>
+		<property name="authorNum" type="integer" not-null="true"></property>
+		<property name="score" type="double" not-null="true"></property>
+		<property name="sci" type="string" length="50"/>
+		<property name="ei" type="string" length="50"/>
+		<property name="istp" type="string" length="50"/>
+		<property name="effect" type="string" not-null="true" length="50"/>
+		<property name="name" type="string" not-null="true" length="50"/>
+		<property name="otherInfo" type="string" not-null="true" length="50"/>
+	</class>
+</hibernate-mapping>
